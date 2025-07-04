@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background: url('../wallpaper/02.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.header, .navbar {
+    background: #242526;
+    color: #e4e6eb;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    background: #111;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px #0003;
+}
+.navbar .logo {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+.navbar a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #2ecc40;
+}
+.navbar .right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #222;
+    border-radius: 18px;
+    padding: 32px 24px;
+    box-shadow: 0 0 24px #000a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea {
+    background: #18191a;
+    color: #e4e6eb;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+button {
+    background: #00ff99;
+    color: #18191a;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    border: 2px solid #2ecc40;
+}
+.form-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form-box input, .form-box textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #181818;
+    color: #eee;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+.form-box input:focus, .form-box textarea:focus {
+    border: 1.5px solid #2ecc40;
+    outline: none;
+}
+.form-box button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #2ecc40, #27ae60);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.form-box button:hover {
+    background: linear-gradient(90deg, #27ae60, #2ecc40);
+}
+.error {
+    color: #ff6666;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+.table {
+    width: 100%;
+    background: #181818;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 18px;
+    box-shadow: 0 0 10px #0005;
+}
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    font-size: 1em;
+}
+.table th {
+    background: #232323;
+    font-weight: 700;
+    color: #2ecc40;
+}
+.table tr:last-child td {
+    border-bottom: none;
+}
+.table a {
+    color: #a7c7ff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.table a:hover {
+    color: #2ecc40;
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 16px 2vw;
+        margin: 16px 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+    }
+    .navbar .logo {
+        margin-bottom: 8px;
+        font-size: 1.1em;
+    }
+    .avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+    .table th, .table td {
+        padding: 8px 4px;
+        font-size: 0.95em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+}
